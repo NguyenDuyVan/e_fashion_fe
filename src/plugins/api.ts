@@ -1,6 +1,6 @@
-import { $fetch,FetchOptions } from 'ohmyfetch';
-import { defineNuxtPlugin } from 'nuxt/app';
-import AuthModule from '../repository/modules/auth';
+import { $fetch, FetchOptions } from 'ohmyfetch'
+import { defineNuxtPlugin } from 'nuxt/app'
+import AuthModule from '../repository/modules/auth'
 
 /** ApiInstance interface provides us with good typing */
 interface IApiInstance {
@@ -8,23 +8,21 @@ interface IApiInstance {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
-
-  
   const fetchOptions: FetchOptions = {
     baseURL: nuxtApp.$config.API_BASE_URL,
   }
 
   /** create a new instance of $fetcher with custom option */
-  const apiFetcher = $fetch.create(fetchOptions);
+  const apiFetcher = $fetch.create(fetchOptions)
 
   /** an object containing all repositories we need to expose */
   const modules: IApiInstance = {
     auth: new AuthModule(apiFetcher),
-  };
+  }
 
   return {
     provide: {
       api: modules,
     },
-  };
-});
+  }
+})
