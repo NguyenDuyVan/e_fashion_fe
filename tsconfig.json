@@ -10,7 +10,7 @@
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "types": ["@nuxt/types", "@types/node", "@types/vue"],
+    "types": ["@nuxt/types", "@types/node"],
     "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
     "paths": {
