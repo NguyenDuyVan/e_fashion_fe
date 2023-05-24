@@ -7,7 +7,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint . --ext .ts,.vue",
+    "lint": "eslint . --ext .ts,.vue,.json",
+    "lint-fix": "eslint --fix --ext .js,.ts,.vue,.json",
     "format": "prettier --write **/*.{vue,ts,json}"
   },
   "devDependencies": {

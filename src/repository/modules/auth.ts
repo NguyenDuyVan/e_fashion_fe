@@ -1,5 +1,5 @@
-import HttpFactory from '../factory'
 import { ICreateAccountInput, ICreateAccountResponse, ILoginInput, ILoginResponse } from 'types'
+import HttpFactory from '../factory'
 
 class AuthModule extends HttpFactory {
   private RESOURCE = '/auth'
