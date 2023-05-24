@@ -31,7 +31,8 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.9",
     "ohmyfetch": "^0.4.21",
-    "pinia": "^2.0.35"
+    "pinia": "^2.0.35",
+    "primevue": "^3.29.1"
   },
   "overrides": {
     "vue": "latest"
