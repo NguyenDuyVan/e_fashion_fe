@@ -1,11 +1,18 @@
-import { fileURLToPath } from 'url'
+// import { fileURLToPath } from 'url'
 import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
-  alias: {
-    assets: fileURLToPath(new URL('./src/assets', import.meta.url)),
-    '@': fileURLToPath(new URL('./src', import.meta.url)),
-    '~': fileURLToPath(new URL('./src', import.meta.url)),
-  },
+  srcDir: 'src/',
+  // alias: {
+  //   assets: fileURLToPath(new URL('./src/assets', import.meta.url)),
+  //   '@': fileURLToPath(new URL('./src', import.meta.url)),
+  //   '~': fileURLToPath(new URL('./src', import.meta.url)),
+  // },
+  // dir: {
+  //   assets: '@/assets',
+  //   layouts: '@/layouts',
+  //   pages: '@/pages',
+  //   plugins: '@/plugins',
+  // },
   imports: {
     autoImport: true,
   },
@@ -13,10 +20,11 @@ export default defineNuxtConfig({
   build: {
     transpile: ['primevue'],
   },
-  modules: [['@nuxtjs/eslint-module', { lintOnStart: false }], '@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: [['@nuxtjs/eslint-module', { lintOnStart: false }], '@nuxtjs/tailwindcss', '@pinia/nuxt', 'nuxt-swiper'],
   css: [
-    'primevue/resources/themes/lara-light-blue/theme.css',
+    '@/assets/style/primevue-theme.css',
     'primevue/resources/primevue.css',
-    '@/assets/style/main.css',
+    'primeicons/primeicons.css',
+    '@/assets/style/main.scss',
   ],
 })

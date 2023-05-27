@@ -7,10 +7,6 @@ class HttpFactory {
     this.$fetch = fetcher
   }
 
-  /**
-   * method - GET, POST, PUT
-   * URL
-   **/
   async call<T>(method: string, url: string, data?: object, extras = {}): Promise<T> {
     const $res: T = await this.$fetch(url, { method, body: data, ...extras })
     return $res

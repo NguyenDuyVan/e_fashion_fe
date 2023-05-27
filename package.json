@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "start": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -30,9 +30,12 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.9",
+    "nuxt-swiper": "^1.1.0",
     "ohmyfetch": "^0.4.21",
     "pinia": "^2.0.35",
-    "primevue": "^3.29.1"
+    "primeicons": "^6.0.1",
+    "primevue": "^3.29.1",
+    "sass": "^1.62.1"
   },
   "overrides": {
     "vue": "latest"
