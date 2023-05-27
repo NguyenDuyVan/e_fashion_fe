@@ -9,10 +9,10 @@
     </div>
     <div class="center grid-rows-6 h-full basis-6/12">
       <ul class="menu flex">
-        <li class="menu-item h-full p-3 mx-3 font-bold text-lg cursor-pointer">Trang Chủ</li>
-        <li class="menu-item h-full p-3 mx-3 font-bold text-lg cursor-pointer">Áo Xuân Hè</li>
-        <li class="menu-item h-full p-3 mx-3 font-bold text-lg cursor-pointer">Quần</li>
-        <li class="menu-item h-full p-3 mx-3 font-bold text-lg cursor-pointer">Phụ Kiện</li>
+        <li class="menu-item h-full py-3 mx-6 font-semibold hover-1 text-lg cursor-pointer">Trang Chủ</li>
+        <li class="menu-item h-full py-3 mx-6 font-semibold hover-1 text-lg cursor-pointer">Áo Xuân Hè</li>
+        <li class="menu-item h-full py-3 mx-6 font-semibold hover-1 text-lg cursor-pointer">Quần</li>
+        <li class="menu-item h-full py-3 mx-6 font-semibold hover-1 text-lg cursor-pointer">Phụ Kiện</li>
       </ul>
     </div>
     <div class="right grid-rows-3 h-full basis-3/12 center">
@@ -39,6 +39,22 @@ const search = ref<string>('')
 .header {
   height: 6rem;
 }
-.center {
+
+.menu-item {
+  position: relative;
+}
+.menu-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: 0.2s;
+  right: 50%;
+}
+.menu-item:hover::before {
+  left: 0%;
+  right: 0%;
 }
 </style>

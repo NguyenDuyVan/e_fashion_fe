@@ -24,6 +24,8 @@ export default defineNuxtConfig({
   css: [
     '@/assets/style/primevue-theme.css',
     'primevue/resources/primevue.css',
+    'swiper/css',
+    'swiper/css/navigation',
     'primeicons/primeicons.css',
     '@/assets/style/main.scss',
   ],

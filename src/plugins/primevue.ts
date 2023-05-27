@@ -5,6 +5,10 @@ import { defineNuxtPlugin } from 'nuxt/app'
 import Badge from 'primevue/badge'
 import BadgeDirective from 'primevue/badgedirective'
 import InputText from 'primevue/inputtext'
+import Card from 'primevue/card'
+import Divider from 'primevue/divider'
+import TabView from 'primevue/tabview'
+import TabPanel from 'primevue/tabpanel'
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, {
@@ -25,4 +29,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('Calendar', Calendar)
   nuxtApp.vueApp.component('Badge', Badge)
   nuxtApp.vueApp.component('InputText', InputText)
+  nuxtApp.vueApp.component('Card', Card)
+  nuxtApp.vueApp.component('Divider', Divider)
+  nuxtApp.vueApp.component('TabView', TabView)
+  nuxtApp.vueApp.component('TabPanel', TabPanel)
 })

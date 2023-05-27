@@ -1,11 +1,5 @@
-<template>
-  <div>Home</div>
-</template>
-
 <script setup lang="ts">
 definePageMeta({
-  layout: 'main',
+  layout: 'home',
 })
 </script>
-
-<style></style>

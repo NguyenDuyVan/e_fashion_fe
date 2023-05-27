@@ -2,7 +2,6 @@
   --primary-color: #3fd0d4;
 }
 
-
 html {
   font-size: 87.5%;
 }
@@ -36,8 +35,19 @@ h6 {
 }
 .hover-1:hover {
   color: var(--primary-color);
-  transition: .2s;
+  transition: 0.2s;
 }
 .p-badge {
   background-color: var(--primary-color);
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bt-second {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
 }
