@@ -1,6 +1,6 @@
 <template>
   <div class="header flex items-center">
-    <div class="left column-3 h-full basis-3/12 center">
+    <div class="left column-3 h-full basis-3/12 center px-2">
       <img
         src="https://cdn.shopify.com/s/files/1/0624/8638/0738/files/logo-storepify.png?crop=center&height=58&v=1681180697&width=430"
         alt="logo"

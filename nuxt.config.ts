@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     'primeicons/primeicons.css',
     'swiper/css',
     'swiper/css/navigation',
+    'tailwindcss/tailwind.css',
     '@/assets/style/main.scss',
   ],
 })
