@@ -22,33 +22,36 @@ import { Navigation, Autoplay } from 'swiper'
     <div id="content">
       <HeroSection />
 
+      <div class="center flex-wrap mt-24">
+        <Coupon v-for="(item, index) in 3" :key="index" class="mx-5" />
+      </div>
       <div class="container">
-        <div class="mt-24">
+        <!-- <div class="mt-24">
           <h3 class="text-center mb-3 font-semibold">Top Danh Mục</h3>
           <div class="flex justify-center">
-            <!-- <div class="mr-4 flex-1">
-          <Banner
-            :custom-class="['justify-start']"
-            content="Hot Sale"
-            btn-label="Mua Ngay"
-            :url-image="'https://cdn.shopify.com/s/files/1/0624/8638/0738/files/banner-left_91af4f83-6d23-4286-8584-53b3ebbe7f2e.png?v=1680604291&width=1780'"
-          />
-        </div>
-        <div class="ml-4 flex-1">
-          <Banner
-            content-position="right"
-            :custom-class="['justify-end']"
-            content="Hàng Mới"
-            btn-label="Mua Ngay"
-            :url-image="'https://cdn.shopify.com/s/files/1/0624/8638/0738/files/banner-right_4559d6ac-37ed-43c3-92c9-d46440d88db2.png?v=1680604307&width=1780'"
-          />
-        </div> -->
+            <div class="mr-4 flex-1">
+              <Banner
+                :custom-class="['justify-start']"
+                content="Hot Sale"
+                btn-label="Mua Ngay"
+                :url-image="'https://cdn.shopify.com/s/files/1/0624/8638/0738/files/banner-left_91af4f83-6d23-4286-8584-53b3ebbe7f2e.png?v=1680604291&width=1780'"
+              />
+            </div>
+            <div class="ml-4 flex-1">
+              <Banner
+                content-position="right"
+                :custom-class="['justify-end']"
+                content="Hàng Mới"
+                btn-label="Mua Ngay"
+                :url-image="'https://cdn.shopify.com/s/files/1/0624/8638/0738/files/banner-right_4559d6ac-37ed-43c3-92c9-d46440d88db2.png?v=1680604307&width=1780'"
+              />
+            </div>
 
             <Category v-for="(item, index) in 5" :key="index" />
           </div>
-        </div>
+        </div> -->
 
-        <div class="mt-24">
+        <div class="mt-16">
           <h3 class="text-center mb-5 font-semibold">Bán Chạy Nhất</h3>
           <TabView>
             <TabPanel header="Áo Phông">
