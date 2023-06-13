@@ -420,31 +420,25 @@ import { Navigation, Autoplay } from 'swiper'
         </div>
 
         <div class="service center flex-wrap mt-24">
-          <div>
-            <div class="flex mr-10">
-              <img src="@/assets/image/service/free-ship.png" alt="" class="mr-4" />
-              <div>
-                <div class="font-bold">Free Ship</div>
-                <div>Cho đơn hàng từ 300K</div>
-              </div>
+          <div class="center mr-10 border border-solid border-black rounded-md p-3 text-lg">
+            <img src="@/assets/image/service/free-ship.png" alt="" class="w-15 h-10 object-cover mr-4" />
+            <div>
+              <div class="font-bold">Free Ship</div>
+              <div>Cho đơn hàng từ 300K</div>
             </div>
           </div>
-          <div>
-            <div class="flex mr-10">
-              <img src="@/assets/image/service/call.png" alt="" class="mr-4" />
-              <div>
-                <div class="font-bold">Phục vụ khách hàng 24/7</div>
-                <div>Gọi cho Shop theo SĐT: 012345678</div>
-              </div>
+          <div class="center mr-10 border border-solid border-black rounded-md p-3 text-lg">
+            <img src="@/assets/image/service/call.png" alt="" class="w-10 h-10 object-cover mr-4" />
+            <div>
+              <div class="font-bold">Phục vụ khách hàng 24/7</div>
+              <div>Gọi cho Shop theo SĐT: 012345678</div>
             </div>
           </div>
-          <div>
-            <div class="flex mr-10">
-              <img src="@/assets/image/service/guarantee.png" alt="" class="mr-4" />
-              <div>
-                <div class="font-bold">Bảo hàng 6 tháng</div>
-                <div>Áp dụng cho tất cả sản phẩm</div>
-              </div>
+          <div class="center mr-10 border border-solid border-black rounded-md p-3 text-lg">
+            <img src="@/assets/image/service/guarantee.png" alt="" class="w-10 h-12 object-cover mr-4" />
+            <div>
+              <div class="font-bold">Bảo hàng 6 tháng</div>
+              <div>Áp dụng cho tất cả sản phẩm</div>
             </div>
           </div>
         </div>
